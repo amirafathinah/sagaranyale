@@ -1,0 +1,67 @@
+// Website prototype for Sagaranyale.id - Homepage + Navigation + 3 core sections
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function Home() {
+  const [userType, setUserType] = useState("UMKM");
+
+  return (
+    <main className="p-4 md:p-10 max-w-6xl mx-auto font-sans">
+      {/* Hero Section */}
+      <section className="text-center py-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+          Digitalisasi UMKM & Nelayan Lombok
+        </h1>
+        <p className="text-gray-700 text-lg mb-6">
+          Platform pelatihan, pendampingan, dan pemasaran produk pesisir
+        </p>
+        <Button size="lg">Gabung Sekarang</Button>
+      </section>
+
+      {/* Tentang Kami */}
+      <section className="py-8">
+        <h2 className="text-3xl font-semibold text-blue-700 mb-4">Tentang Kami</h2>
+        <p className="text-gray-700 max-w-2xl">
+          Sagaranyale.id hadir sebagai solusi digital untuk memberdayakan UMKM dan nelayan pesisir melalui pelatihan, mentoring, serta akses pasar. Dimulai dari Tanjung Luar, kami ingin menjadi jembatan antara potensi lokal dan ekonomi digital nasional.
+        </p>
+      </section>
+
+      {/* Program Pelatihan */}
+      <section className="py-8">
+        <h2 className="text-3xl font-semibold text-blue-700 mb-6">Program Pelatihan</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-bold mb-2">Keuangan UMKM</h3>
+              <p className="text-gray-600 text-sm">
+                Pelatihan manajemen keuangan sederhana dan pencatatan usaha kecil.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-bold mb-2">Branding & Desain Produk</h3>
+              <p className="text-gray-600 text-sm">
+                Belajar cara membangun merek yang menarik dan desain kemasan.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-bold mb-2">Digital Marketing</h3>
+              <p className="text-gray-600 text-sm">
+                Pelatihan promosi produk lewat media sosial dan marketplace.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="mt-16 border-t pt-6 text-center text-sm text-gray-500">
+        © 2025 Sagaranyale.id • Made with care for UMKM & Nelayan Pesisir
+      </footer>
+    </main>
+  );
+}
