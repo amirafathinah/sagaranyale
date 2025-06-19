@@ -1,67 +1,136 @@
-// Website prototype for Sagaranyale.id - Homepage + Navigation + 3 core sections
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagaranyale.id</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
 
-export default function Home() {
-  const [userType, setUserType] = useState("UMKM");
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-blue-100">
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+      Digitalisasi UMKM & Nelayan Lombok
+    </h1>
+    <p class="text-gray-700 text-lg mb-6">
+      Platform pelatihan, pendampingan, dan pemasaran produk pesisir
+    </p>
+    <button class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800">Gabung Sekarang</button>
+  </section>
 
-  return (
-    <main className="p-4 md:p-10 max-w-6xl mx-auto font-sans">
-      {/* Hero Section */}
-      <section className="text-center py-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
-          Digitalisasi UMKM & Nelayan Lombok
-        </h1>
-        <p className="text-gray-700 text-lg mb-6">
-          Platform pelatihan, pendampingan, dan pemasaran produk pesisir
+  <!-- Tentang Kami -->
+  <section class="py-12 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-4">Tentang Kami</h2>
+    <p class="text-gray-700">
+      Sagaranyale.id hadir sebagai solusi digital untuk memberdayakan UMKM dan nelayan pesisir melalui pelatihan, mentoring, serta akses pasar. Dimulai dari Tanjung Luar, kami ingin menjadi jembatan antara potensi lokal dan ekonomi digital nasional.
+    </p>
+  </section>
+
+  <!-- Program Pelatihan -->
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-6">Program Pelatihan</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Keuangan UMKM</h3>
+        <p class="text-gray-600 text-sm">
+          Pelatihan manajemen keuangan sederhana dan pencatatan usaha kecil.
         </p>
-        <Button size="lg">Gabung Sekarang</Button>
-      </section>
-
-      {/* Tentang Kami */}
-      <section className="py-8">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-4">Tentang Kami</h2>
-        <p className="text-gray-700 max-w-2xl">
-          Sagaranyale.id hadir sebagai solusi digital untuk memberdayakan UMKM dan nelayan pesisir melalui pelatihan, mentoring, serta akses pasar. Dimulai dari Tanjung Luar, kami ingin menjadi jembatan antara potensi lokal dan ekonomi digital nasional.
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Branding & Desain Produk</h3>
+        <p class="text-gray-600 text-sm">
+          Belajar cara membangun merek yang menarik dan desain kemasan.
         </p>
-      </section>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+        <p class="text-gray-600 text-sm">
+          Pelatihan promosi produk lewat media sosial dan marketplace.
+        </p>
+      </div>
+    </div>
+  </section>
 
-      {/* Program Pelatihan */}
-      <section className="py-8">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">Program Pelatihan</h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="text-xl font-bold mb-2">Keuangan UMKM</h3>
-              <p className="text-gray-600 text-sm">
-                Pelatihan manajemen keuangan sederhana dan pencatatan usaha kecil.
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="text-xl font-bold mb-2">Branding & Desain Produk</h3>
-              <p className="text-gray-600 text-sm">
-                Belajar cara membangun merek yang menarik dan desain kemasan.
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="text-xl font-bold mb-2">Digital Marketing</h3>
-              <p className="text-gray-600 text-sm">
-                Pelatihan promosi produk lewat media sosial dan marketplace.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+  <!-- Footer -->
+  <footer class="mt-16 border-t pt-6 text-center text-sm text-gray-500">
+    © 2025 Sagaranyale.id • Made with care for UMKM & Nelayan Pesisir
+  </footer>
 
-      {/* Footer */}
-      <footer className="mt-16 border-t pt-6 text-center text-sm text-gray-500">
-        © 2025 Sagaranyale.id • Made with care for UMKM & Nelayan Pesisir
-      </footer>
-    </main>
-  );
-}
+  <!-- JavaScript (jika diperlukan) -->
+  <script>
+    // Tambahkan interaksi JS di sini jika ingin
+    document.querySelector('button').addEventListener('click', function() {
+      alert('Terima kasih sudah tertarik bergabung!');
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagaranyale.id</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-blue-100">
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+      Digitalisasi UMKM & Nelayan Lombok
+    </h1>
+    <p class="text-gray-700 text-lg mb-6">
+      Platform pelatihan, pendampingan, dan pemasaran produk pesisir
+    </p>
+    <button class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800">Gabung Sekarang</button>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="py-12 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-4">Tentang Kami</h2>
+    <p class="text-gray-700">
+      Sagaranyale.id hadir sebagai solusi digital untuk memberdayakan UMKM dan nelayan pesisir melalui pelatihan, mentoring, serta akses pasar. Dimulai dari Tanjung Luar, kami ingin menjadi jembatan antara potensi lokal dan ekonomi digital nasional.
+    </p>
+  </section>
+
+  <!-- Program Pelatihan -->
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-6">Program Pelatihan</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Keuangan UMKM</h3>
+        <p class="text-gray-600 text-sm">
+          Pelatihan manajemen keuangan sederhana dan pencatatan usaha kecil.
+        </p>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Branding & Desain Produk</h3>
+        <p class="text-gray-600 text-sm">
+          Belajar cara membangun merek yang menarik dan desain kemasan.
+        </p>
+      </div>
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+        <p class="text-gray-600 text-sm">
+          Pelatihan promosi produk lewat media sosial dan marketplace.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t pt-6 text-center text-sm text-gray-500">
+    © 2025 Sagaranyale.id • Made with care for UMKM & Nelayan Pesisir
+  </footer>
+
+  <!-- JavaScript (jika diperlukan) -->
+  <script>
+    // Tambahkan interaksi JS di sini jika ingin
+    document.querySelector('button').addEventListener('click', function() {
+      alert('Terima kasih sudah tertarik bergabung!');
+    });
+  </script>
+</body>
+</html>
