@@ -1,0 +1,10 @@
+
+/* style.css */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Dropdown behavior for navigation */
+.group:hover .group-hover\:block {
+  display: block;
+}
