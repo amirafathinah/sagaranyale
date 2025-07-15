@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak Kami - Sagaranyale.id</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-800">Sagaranyale.id</h1>
+      <nav>
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+          <li><a href="index.html" class="hover:text-blue-700">Beranda</a></li>
+          <li><a href="index.html#tentang" class="hover:text-blue-700">Tentang Kami</a></li>
+          <li><a href="index.html#program" class="hover:text-blue-700">Program</a></li>
+          <li><a href="kontak.html" class="text-blue-800 font-semibold">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kontak Kami -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold text-blue-700 mb-8 text-center">Hubungi Kami</h1>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Info Kontak -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Informasi Kontak</h2>
+        <p class="text-gray-700 mb-2">📍 Tanjung Luar, Lombok Timur</p>
+        <p class="text-gray-700 mb-2">📞 0821-xxxx-xxxx (WhatsApp)</p>
+        <p class="text-gray-700 mb-4">✉️ sagaranyaleid@gmail.com</p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Ikuti Kami</h2>
+        <p class="text-gray-700">Instagram: <a href="#" class="text-blue-600 hover:underline">@sagaranyale.id</a></p>
+        <p class="text-gray-700">Facebook: <a href="#" class="text-blue-600 hover:underline">Sagaranyale Indonesia</a></p>
+      </div>
+
+      <!-- Form Kontak -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Kirim Pesan</h2>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Nama</label>
+            <input type="text" class="mt-1 w-full p-2 border border-gray-300 rounded-md" required />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" class="mt-1 w-full p-2 border border-gray-300 rounded-md" required />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Pesan</label>
+            <textarea class="mt-1 w-full p-2 border border-gray-300 rounded-md" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">
+            Kirim
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t pt-6 text-center text-sm text-gray-500">
+    © 2025 Sagaranyale.id • Kami hadir untuk pesisir Indonesia
+  </footer>
+
+</body>
+</html>
